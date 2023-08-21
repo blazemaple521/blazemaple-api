@@ -14,7 +14,7 @@ spring:
     database: 1
     host: 47.113.192.56
     port: 6379
-    password: 673058Sqp
+    password: ********
   #    timeout: 5000
   #    password:
   # session 配置
@@ -27,7 +27,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/blazemaple_api
     username: root
-    password: 673058Sqp
+    password: ********
   # 文件上传
   servlet:
     multipart:
@@ -55,11 +55,11 @@ mybatis-plus:
 aliyun:
   oss:
     endpoint: oss-cn-shanghai.aliyuncs.com
-    urlPrefix: http://upload.yolo912.icu
-    accessKeyId: LTAI5tMeFcPa34b61gSakhRt
-    accessKeySecret: PdKiHvGTbJseotW6eWKAtXZYpRWo1y
-    bucketName: yoloblog
-    fileHost: apiUserAvatar
+    urlPrefix: *****************
+    accessKeyId: **********************
+    accessKeySecret: ******************
+    bucketName:
+    fileHost:
 
 
 
@@ -75,7 +75,7 @@ dubbo:
     name: blazemaple-api-backend
   registry:
     id: nacos-registry
-    address: nacos://47.113.192.56:8848
+    address: nacos://localhost:8848
     # 配置namespace命名空间
     parameters:
       namespace: fc776d26-ed8d-4053-9e69-f296c38fbefc
