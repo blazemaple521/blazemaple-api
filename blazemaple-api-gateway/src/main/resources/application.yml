@@ -1,0 +1,38 @@
+server:
+  port: 8090
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://47.113.192.56:8123
+          predicates:
+            - Path=/**
+  redis:
+    host: 47.113.192.56
+    port: 6379
+    database: 3
+    password: 673058Sqp
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+dubbo:
+  consumer:
+    timeout: 3000
+    retries: 0
+  application:
+    name: blazemaple-api-gateway
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: zk-registry
+    address: nacos://47.113.192.56:8848
+    parameters:
+      namespace: fc776d26-ed8d-4053-9e69-f296c38fbefc
+

@@ -1,0 +1,11 @@
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.113.192.56:3306/blazemaple_api
+    username: root
+    password: 673058Sqp
+
+blazemaple:
+  gateway:
+    host: http://47.113.192.56:8090
