@@ -13,7 +13,7 @@ spring:
     host: 47.113.192.56
     port: 6379
     database: 3
-    password: ******
+    password:
 
 logging:
   level:
