@@ -55,9 +55,9 @@ mybatis-plus:
 aliyun:
   oss:
     endpoint: oss-cn-shanghai.aliyuncs.com
-    urlPrefix: *****************
-    accessKeyId: **********************
-    accessKeySecret: ******************
+    urlPrefix: ****************
+    accessKeyId: *********************
+    accessKeySecret: *****************
     bucketName:
     fileHost:
 
